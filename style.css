@@ -1,0 +1,231 @@
+@import "modern-normilize";
+:root{
+    line-height:1.5;
+    /* max-inline-size:66ch; */
+    margin:0px;
+    font-size:clamp(1rem,0.75 + 1.5vw, 2rem);
+    padding:0px;
+}
+@font-face {
+    font-family:my-norse;
+    src: url(/fonts/Norse.woff2);
+    font-style:normal;
+    font-weight:normal;
+    display:swap;
+}
+@font-face {
+    font-family:my-roboto;
+    src: url(/fonts/Roboto-Regular.woff2);
+    font-style:normal;
+    font-weight:normal;
+    display:swap;
+}
+
+h1,h2,h3,h4,h5,figure,p,ul,ol{
+    margin:0;
+}
+
+h1,h2,h3,h4,h5{
+    font-size: inherit;
+    font-weight:inherit;
+    padding:0;
+    font-family:my-roboto;
+}
+
+img,canvas,svg{
+    max-inline-size:100%;
+    display: block;
+}
+body{
+    background-color:rgb(36,36,36);
+
+}
+.top-logo{
+    display: flex;
+    width:70%;
+     margin-top:195px;
+}
+.logo-content{
+    background-color:rgb(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    padding:10px 0px;
+    width:100%;
+    height:100px;
+}
+.top-logo h1{
+font-family:my-norse;
+ font-size:3.5rem;
+ font-weight: bold;
+ margin-top:10px;
+ color:#ffff;
+ margin-right:45px;
+}
+img{
+    width:65px;
+    height:100px;
+    
+}
+.content{
+    display:flex;
+    justify-content:space-between;
+     background-image:url(/asset/istockphoto-2160078318-612x612.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    width:100%;
+    height:100vh;
+}
+
+.sign-up{
+    background:rgb(245,245,245);
+    width:100%;
+    height:100vh;
+    margin-right:0px;
+
+}
+
+.sign-up-note{
+    font-family:my-roboto;
+    font-size:0.95rem;
+    width:400px;
+    margin-top:115px;
+    margin-left:30px;
+    font-weight: bold;
+}
+
+.sign-up-note p + p{
+    font-weight: lighter;
+    font-style: italic;
+}
+label{
+    font-family:my-roboto;
+    font-size:0.8rem;
+    display: block;
+    font-weight: lighter;
+}
+.sign-up-name{
+    display:flex;
+}
+
+input{
+appearance:none;
+}
+
+input[id="fname"]{
+    width:200px;
+    border:2px solid rgb(200,200,200);
+    border-radius:5px;
+    padding:5px;
+    margin-right:100px;
+    outline:none;
+}
+input[id="fname"]:focus{
+    width:200px;
+    border:2px solid rgb(126, 126, 250);
+    border-radius:5px;
+    padding:5px;
+    margin-right:100px;
+}
+input[id="lname"]{
+     width:200px;
+    border:2px solid rgb(200,200,200);
+    border-radius:5px;
+    padding:5px;
+    outline: none;
+}
+input[id="lname"]:focus{
+     width:200px;
+    border:2px solid rgb(126, 126, 250);
+    border-radius:5px;
+    padding:5px;
+}
+
+.contact-infor{
+    display:flex;
+}
+
+.password{
+    display: flex;
+}
+
+input[id="email"]{
+     width:200px;
+    border:2px solid rgb(200,200,200);
+    border-radius:5px;
+    padding:5px;
+    margin-right:100px;
+}
+input[id="phone-number"]{
+     width:200px;
+    border:2px solid rgb(200,200,200);
+    border-radius:5px;
+    padding:5px;
+    outline: none;
+}
+input[id="email"]:user-valid{
+     width:200px;
+    border:2px solid rgb(60,200,60);
+    border-radius:5px;
+    padding:5px;
+}
+input[id="email"]:user-invalid{
+     width:200px;
+    border:2px solid rgb(200,50,50);
+    border-radius:5px;
+    padding:5px;
+}
+
+input[id="password"]{
+     width:200px;
+    border:2px solid rgb(200,200,200);
+    border-radius:5px;
+    padding:5px;
+    margin-right:100px;
+}
+input[id="password"]:required{
+     width:200px;
+    border:2px solid rgb(200,60,100);
+    border-radius:5px;
+    padding:5px;
+    margin-right:100px;
+}
+
+input[id="cpassword"]:required{
+     width:200px;
+    border:2px solid rgb(200,60,100);
+    border-radius:5px;
+    padding:5px;
+}
+.sign-up-form{
+    margin-top:19px;
+    background-color:#fff;
+    box-shadow: 1px 1px 2px rgb(192, 189, 189);
+    padding:20px;
+}
+.sign-up-form h1{
+    font-size:1.3rem;
+    font-family:my-roboto;
+    margin:10px 40px;
+}
+
+button{
+    padding:10px;
+    width:200px;
+    color:rgb(225,225,225);
+    background:rgb(3, 82, 3);
+    border:none;
+    border-radius:5px;
+    margin-left:25px;
+    margin-top:20px;
+    font-weight: lighter;
+    box-shadow:1px 1px 2px grey;
+    font-family:my-roboto;
+}
+
+.call-log-in{
+    margin-left:25px;
+    margin-top:20px;
+    font-family:my-roboto;
+    color:rgb(3, 82, 3);
+    font-size:0.8rem;
+}
