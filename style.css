@@ -8,14 +8,14 @@
 }
 @font-face {
     font-family:my-norse;
-    src: url(/fonts/Norse.woff2);
+    src: url(fonts/Norse.woff2);
     font-style:normal;
     font-weight:normal;
     display:swap;
 }
 @font-face {
     font-family:my-roboto;
-    src: url(/fonts/Roboto-Regular.woff2);
+    src: url(fonts/Roboto-Regular.woff2);
     font-style:normal;
     font-weight:normal;
     display:swap;
@@ -69,7 +69,7 @@ img{
 .content{
     display:flex;
     justify-content:space-between;
-     background-image:url(/asset/istockphoto-2160078318-612x612.jpg);
+     background-image:url(asset/istockphoto-2160078318-612x612.jpg);
     background-repeat:no-repeat;
     background-size:contain;
     width:100%;
